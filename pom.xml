@@ -147,6 +147,12 @@
                 <groupId>org.gagravarr</groupId>
                 <artifactId>vorbis-java-tika</artifactId>
                 <version>${vorbis.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.tika</groupId>
+                        <artifactId>tika-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
